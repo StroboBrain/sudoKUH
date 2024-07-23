@@ -15,20 +15,18 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Table is needed for the runSudoku.js -->
+    <div class="sudokuContainer">
+    <table id="sudokuTable"></table>    
+    </div>
     
-    <table id="sudokuTable"></table>
     <script src="js/sudoku.js"></script>
     <script src="js/runSudoku.js"></script>
     
-    
-    
-  
-
 </head>
 <body>
 <h1 id="title">Solve the Sudoku by clicking the ?</h1>
 
-<table id="sudokuTable"></table>
 
 <button id='replayButton' onclick="location.reload();">restart</button>
 

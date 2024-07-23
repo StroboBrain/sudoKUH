@@ -1,5 +1,4 @@
 
-    // serviceworker script, should be refactored in a different file in the future.
     // does the browser support service workers?
     if ('serviceWorker' in navigator) {
       // fires when the service worker is ready

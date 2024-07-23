@@ -1,6 +1,6 @@
 
 /**
-     *To run this class, the sudoku.js libary is needed, because it is old, it has no exports
+     *To run this class, the sudoku.js library is needed, because it is old, it has no exports
      */
 
 
