@@ -185,6 +185,7 @@ class SudokuTable{
     createBoard(Puzzle, table){
         table.innerHTML = ''; //We always want to reset the table
         table.id = 'sudokuTable';
+        table.style.tableLayout = "fixed";
         let puzzleValues = Puzzle.getCurrentPuzzleAsGrid();
         //filles the table with the coresponding buttons
         for (var i = 0; i < 9; i++) {

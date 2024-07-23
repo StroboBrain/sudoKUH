@@ -26,7 +26,6 @@ html {
   min-height: 500px;
   flex-direction: column; /* Change direction to oder the items in columns*/
   justify-content: start; /* Start from the top down*/
-  overflow: hidden; 
   padding: 20px;
 
 }
@@ -135,9 +134,9 @@ button#replayButton {
 .sudokuButton {
   background-color: rgb(233, 233, 233);
   color: black;
-  width: 7vh;
-  height: 7vh;
-  font-size: 5.5vh;
+  width: 8vw;
+  height: 8vw;
+  font-size: 6vw;
   text-align: center;
   align-items: center;  /* Center vertically */
   justify-content: center;  /* Center horizontally */
