@@ -23,10 +23,11 @@ html {
   align-items: center;      /* Center vertically */
   height: 100vh;            /*  viewport height */
   min-width: 400px;          /* Minimum width for the centered div */
-  max-width: 1000px;
+  min-height: 500px;
   flex-direction: column; /* Change direction to oder the items in columns*/
   justify-content: start; /* Start from the top down*/
-  border-collapse: collapse;
+  overflow: hidden; 
+  padding: 20px;
 
 }
 .selectionButtons{
@@ -39,22 +40,24 @@ html {
 .gameButtons{
   background-color: rgb(54, 83, 179);
   color: white;
-  padding: 1.3vw 1.6vw;
-  margin-bottom: 1vw;
-  font-size: 2vw;
+  padding: 1.3vh 1.6vh;
+  margin-bottom: 1vh;
+  font-size: 2vh;
   cursor: pointer;
   border-radius: 5px;
 }
 
 body {
-  margin: 10vw 20vw;
+  margin: 3vw;
   font-family: Roboto, Helvetica, Arial, Verdana, sans-serif;
+  height: 100%;
+
+
 }
 
 h1 {
   text-align: center;
   color: rgb(54, 83, 179);
-  margin: 0 0 5vw;
 }
 
 div.costArea {
@@ -132,9 +135,9 @@ button#replayButton {
 .sudokuButton {
   background-color: rgb(233, 233, 233);
   color: black;
-  width: 8vw;
-  height: 8vw;
-  font-size: 6vw;
+  width: 7vh;
+  height: 7vh;
+  font-size: 5.5vh;
   text-align: center;
   align-items: center;  /* Center vertically */
   justify-content: center;  /* Center horizontally */
