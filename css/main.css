@@ -25,11 +25,14 @@ html {
   min-width: 400px;          /* Minimum width for the centered div */
   flex-direction: column; /* Change direction to oder the items in columns*/
   justify-content: start; /* Start from the top down*/
+  border-collapse: collapse;
+
 }
 .difficultyButtons{
   display: flex;            /* Enable Flexbox */
   justify-content: space-around;
-  min-width: 400px; 
+  min-width: 400px;
+  max-width: 800px;
 }
 
 body {
@@ -127,17 +130,6 @@ button#replayButton {
 }
 
 
-button#installButton:hover {
-  background-color: #f87a03;
-}
-input {
-  border: 1pt solid #ccc;
-}
-
-/* button#installButton:active {
-  background-color: #f87a03;
-  color: #444;
-} */
 
 /*
  * Remove text-shadow in selection highlight:
