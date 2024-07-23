@@ -20,11 +20,16 @@ html {
 
 .sudokuContainer {
   display: flex;            /* Enable Flexbox */
-  justify-content: center;  /* Center horizontally */
   align-items: center;      /* Center vertically */
-  height: 100vh;            /* Full viewport height */
-  background-color: #f0f0f0; /* Optional: background color for visualization */
+  height: 90vh;            /*  viewport height */
   min-width: 400px;          /* Minimum width for the centered div */
+  flex-direction: column; /* Change direction to oder the items in columns*/
+  justify-content: start; /* Start from the top down*/
+}
+.difficultyButtons{
+  display: flex;            /* Enable Flexbox */
+  justify-content: space-around;
+  min-width: 400px; 
 }
 
 body {
@@ -107,16 +112,6 @@ button#playButton {
 
 button#replayButton {
  /* TODOO*/
-}
-
-button#installButton {
-  background-color: rgb(54, 83, 179);
-  color: white;
-  padding: 1.3vw 1.6vw;
-  font-size: 1.5vw;
-  cursor: pointer;
-  border-radius: 5px;
-  display:none;
 }
 
 

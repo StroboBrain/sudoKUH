@@ -17,7 +17,17 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Table is needed for the runSudoku.js -->
     <div class="sudokuContainer">
-    <table id="sudokuTable"></table>    
+        <h1 id="checkFeedBack">Solve the Sudoku by clicking the ?</h1>
+        <table id="sudokuTable"></table>
+        <div class="difficultyButtons">
+            <button id='replayButton' onclick="location.reload();">restart</button>
+            <div>
+            <button id="hardButton" onclick="sudokuObject.updateDifficulty('hard')">hard</button>
+            <button id="mediumButton" onclick="sudokuObject.updateDifficulty('medium')">medium</button>
+            <button id="easyButton" onclick="sudokuObject.updateDifficulty('easy')">easy</button>   
+            </div>
+        </div>
+        <button onClick = sudokuObject.checkSolution();> check solution</button>
     </div>
     
     <script src="js/sudoku.js"></script>
@@ -25,24 +35,6 @@
     
 </head>
 <body>
-<h1 id="title">Solve the Sudoku by clicking the ?</h1>
 
-
-<button id='replayButton' onclick="location.reload();">restart</button>
-
-<button id="hardButton" onclick="sudokuObject.updateDifficulty('hard')">hard</button>
-<button id="mediumButton" onclick="sudokuObject.updateDifficulty('medium')">medium</button>
-<button id="easyButton" onclick="sudokuObject.updateDifficulty('easy')">easy</button>
-
-
-
-
-
-<p id="checkFeedBack"></p>
-
-
-
-
-<button onClick = sudokuObject.checkSolution();> check solution</button>
 </body>
 </html>
