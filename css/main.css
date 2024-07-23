@@ -21,8 +21,9 @@ html {
 .sudokuContainer {
   display: flex;            /* Enable Flexbox */
   align-items: center;      /* Center vertically */
-  height: 90vh;            /*  viewport height */
+  height: 100vh;            /*  viewport height */
   min-width: 400px;          /* Minimum width for the centered div */
+  max-width: 1000px;
   flex-direction: column; /* Change direction to oder the items in columns*/
   justify-content: start; /* Start from the top down*/
   border-collapse: collapse;
