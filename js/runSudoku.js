@@ -59,7 +59,8 @@ class SudokuMain {
                 //button.id[11] is the x axis an 12 is the y axis, because Button.id = SudokuFieldxy
                 if (check[button.id[11]][button.id[12]] === button.textContent){
                     button.style.backgroundColor = 'green'; //set the background to green
-                    button.onclick = null; // button can't be pressed anymore
+                    button.style.backgroundColor = 'green'; //set the background to green
+                    button.disabled = true; 
                 } else {
                     if (button.textContent!=='?'){
                         button.style.backgroundColor = 'red'; // red if you made a mistake
@@ -204,6 +205,8 @@ class SudokuTable{
                     button.onclick = function() {
                         sudokuObject.updateSudokuNumber(this);
                     };
+                } else {
+                    button.disabled = true;
                 }
                 row.appendChild(button);
             }
@@ -213,7 +216,7 @@ class SudokuTable{
 
   
 
-    //get the coordinates of a button by extractin the information form the id
+    //get the coordinates of a button by extracting the information form the id
     xCoordinates (button){
         return button.id[11];
     }
@@ -233,14 +236,3 @@ function updateDifficulty(difficultyLevel){
     sudokuObject.updateDifficulty(difficultyLevel);
     console.log("updated Difficulty to",difficultyLevel);
 }
-
-
-
-
-
-
-
-
-
-
- 
