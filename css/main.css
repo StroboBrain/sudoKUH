@@ -22,8 +22,8 @@ html {
   display: flex;            /* Enable Flexbox */
   align-items: center;      /* Center vertically */
   height: 100vh;            /*  viewport height */
-  min-width: 500px;          /* Minimum width for the centered div */
-  min-height: 500px;
+  min-width:100%;          /* Minimum width for the centered div */
+  min-height: 100%;
   flex-direction: column; /* Change direction to oder the items in columns*/
   justify-content: start; /* Start from the top down*/
   padding: 20px;
