@@ -187,6 +187,8 @@ class SudokuTable{
         table.innerHTML = ''; //We always want to reset the table
         table.id = 'sudokuTable';
         table.style.tableLayout = "fixed";
+        table.style.borderSpacing = "0";
+        table.style.paddingBottom = "1vh";
         let puzzleValues = Puzzle.getCurrentPuzzleAsGrid();
         //filles the table with the coresponding buttons
         for (var i = 0; i < 9; i++) {
@@ -196,6 +198,7 @@ class SudokuTable{
                 var button = document.createElement('button');
                 button.id = name;
                 button.classList.add("sudokuButton");
+                
                 // sudoku.js libary uses a . for an empty square, replace it with a ?
                 button.textContent = puzzleValues[i][j] === "." ?  "?" : puzzleValues[i][j];
                 //Only add a button to change, if it was not set at the beginning
@@ -207,6 +210,19 @@ class SudokuTable{
                     };
                 } else {
                     button.disabled = true;
+                }
+                // Create the black lines for the Sudoku grid
+                if (j==2||j==5){
+                    button.style.borderRight = "0.5vh solid black";
+                }
+                else if (j==3||j==6){
+                    button.style.borderLeft = "0.5vh solid black";
+                }
+                if (i==2||i==5){
+                    button.style.borderBottom = "0.5vh solid black";
+                }
+                else if (i==3||i==6){
+                    button.style.borderTop = "0.5vh solid black";
                 }
                 row.appendChild(button);
             }
