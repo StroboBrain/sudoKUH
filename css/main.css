@@ -21,10 +21,10 @@ html {
 .sudokuContainer {
   display: flex;            /* Enable Flexbox */
   align-items: center;      /* Center vertically */
-  height: 95vh;
-  width: 95vh            /*  viewport height */
-  min-width:100%;          /* Minimum width for the centered div */
-  min-height: 100%;
+  height: 100vh;
+  width: 90vw;            /*  viewport height */
+  max-width: 80vh;          /* Minimum width for the centered div */
+  max-height: 100vh;
   flex-direction: column; /* Change direction to oder the items in columns*/
   justify-content: start; /* Start from the top down*/
   padding: 20px;
