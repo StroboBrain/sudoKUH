@@ -193,6 +193,7 @@ class SudokuTable{
         //filles the table with the coresponding buttons
         for (var i = 0; i < 9; i++) {
             var row = document.createElement('tr');
+            row.style.whiteSpace = "nowrap"; // ensures the row stays a row
             for (var j = 0; j < 9; j++) {
                 var name = "SudokuField" + i + j;
                 var button = document.createElement('button');
