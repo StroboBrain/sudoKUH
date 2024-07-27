@@ -186,10 +186,10 @@ class SudokuTable{
     createBoard(Puzzle, table){
         table.innerHTML = ''; //We always want to reset the table
         table.id = 'sudokuTable';
-        table.style.tableLayout = "fixed";
         table.style.borderSpacing = "0";
         table.style.paddingBottom = "1vh";
-        table.style.width = "100%";
+        table.style.width = "100vw";
+        table.style.height = "80vh";
         table.style.alignItems = "center";
         table.style.display = "flex";
         table.style.flexDirection = "column";
