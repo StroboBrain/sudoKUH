@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Table is needed for the runSudoku.js -->
+    <h1 id="checkFeedBack">Solve the Sudoku by clicking the ?</h1>
     <div class="sudokuContainer">
-        <h1 id="checkFeedBack">Solve the Sudoku by clicking the ?</h1>
-        <table id="sudokuTable"></table>
+        <div>
+        <table id="sudokuTable"></table>    ¨
+        </div>
         <div class="selectionButtons">
             <button class="gameButtons" id='replayButton' onclick="location.reload();">restart</button>
             <div>
@@ -29,10 +31,9 @@
             <button class="gameButtons" id="mediumButton" onclick="sudokuObject.updateDifficulty('medium')">medium</button>
             <button class="gameButtons" id="easyButton" onclick="sudokuObject.updateDifficulty('easy')">easy</button>   
             </div>
-        </div>
+        </div>      
         <button class="gameButtons" onClick = sudokuObject.checkSolution();> check solution</button>
     </div>
-    
     <script src="js/sudoku.js"></script>
     <script src="js/runSudoku.js"></script>
     

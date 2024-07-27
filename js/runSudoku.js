@@ -188,8 +188,8 @@ class SudokuTable{
         table.id = 'sudokuTable';
         table.style.borderSpacing = "0";
         table.style.paddingBottom = "1vh";
-        table.style.width = "100vw";
-        table.style.height = "80vh";
+        table.style.width = "80vh";
+        //table.style.height = "80vw";
         table.style.alignItems = "center";
         table.style.display = "flex";
         table.style.flexDirection = "column";
