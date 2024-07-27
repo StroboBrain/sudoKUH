@@ -189,6 +189,11 @@ class SudokuTable{
         table.style.tableLayout = "fixed";
         table.style.borderSpacing = "0";
         table.style.paddingBottom = "1vh";
+        table.style.width = "100%";
+        table.style.alignItems = "center";
+        table.style.display = "flex";
+        table.style.flexDirection = "column";
+
         let puzzleValues = Puzzle.getCurrentPuzzleAsGrid();
         //filles the table with the coresponding buttons
         for (var i = 0; i < 9; i++) {
