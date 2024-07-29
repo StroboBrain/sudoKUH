@@ -16,7 +16,7 @@ class SudokuMain {
     // Function that is run, when the check solution button is pressed.
     checkSolution(){
         this.checkUserNumbers();
-        let feedback = "please try harder";1
+        let feedback = "please try harder";
         if (this.isSolved()){
             feedback = "we have a winner";
         }
