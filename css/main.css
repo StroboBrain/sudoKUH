@@ -141,10 +141,10 @@ button#replayButton {
 .sudokuButton {
   background-color: rgb(233, 233, 233);
   color: black;
-  width: 8vh;
+  width: 7vh;
 max-width: 8vw;
    max-height: 8vw;
-  height: 8vh;
+  height: 7vh;
   font-size: 6vh;
   text-align: center;
   align-items: center;  /* Center vertically */
